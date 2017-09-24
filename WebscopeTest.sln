@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebscopeTest", "WebscopeTest\WebscopeTest.csproj", "{48FE1EB1-D334-4988-8052-0977BC48A22D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48FE1EB1-D334-4988-8052-0977BC48A22D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48FE1EB1-D334-4988-8052-0977BC48A22D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48FE1EB1-D334-4988-8052-0977BC48A22D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48FE1EB1-D334-4988-8052-0977BC48A22D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E76867D-ED32-4DDE-8408-C6B626D24004}
+	EndGlobalSection
+EndGlobal
