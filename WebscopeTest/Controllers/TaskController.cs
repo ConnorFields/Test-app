@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace WebscopeTest.Controllers
 {
-    [Route("Task/[TaskController]")]
+    [Route("task/[TaskController]")]
     public class TaskController : Controller
     {
         private readonly TaskContext _context;
@@ -52,11 +52,23 @@ namespace WebscopeTest.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(long id)
         {
-            var todo = _context.TaskItems.FirstOrDefault(x => x.Id == id);
+            var task = _context.TaskItems.FirstOrDefault(x => x.Id == id);
 
-            if (todo == null) return NotFound();
+            if (task == null) return NotFound();
 
-            _context.TaskItems.Remove(todo);
+            _context.TaskItems.Remove(task);
+            _context.SaveChanges();
+            return new NoContentResult();
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult TimeOut(long id)
+        {
+            var task = _context.TaskItems.FirstOrDefault(x => x.Id == id);
+
+            if (task == null) return NotFound();
+
+            _context.TaskItems.Remove(task);
             _context.SaveChanges();
             return new NoContentResult();
         }
